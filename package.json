@@ -1,0 +1,43 @@
+{
+	"name": "compose-redux-reducers",
+	"version": "1.0.0",
+	"description": "A function for composing several redux reducers into a single reducer. Useful if you intend for each reducer to return the entire state.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"prepublish": "npm run build",
+		"build": "tsc",
+		"test": "jest --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/drjustongray/compose-redux-reducers.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/drjustongray/compose-redux-reducers/issues"
+	},
+	"homepage": "https://github.com/drjustongray/compose-redux-reducers#readme",
+	"devDependencies": {
+		"@types/jest": "^21.1.8",
+		"jest": "^21.2.1",
+		"ts-jest": "^21.2.4",
+		"typescript": "^2.6.2"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx",
+			"json",
+			"node"
+		]
+	}
+}
